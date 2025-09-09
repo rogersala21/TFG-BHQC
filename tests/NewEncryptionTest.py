@@ -1,6 +1,6 @@
 #This is a test script to replace c2_PublicKeyAggregator.py and p3_ReducedSecurityKeyCipher.py using a new encryption method.
 
-#Each participant encrypts his Bitcoin private key with a lower security than the one offered by secp256k1.
+#Each participant encrypts his Bitcoin private key with a lower security than secp256k1.
 import os
 from bitcoinutils.keys import PrivateKey
 from tinyec import registry
