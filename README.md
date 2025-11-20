@@ -1,14 +1,14 @@
 # BHQC: Bitcoin Honeypot for Quantum Computers
 
-**Honeypot Address Generation Protocol (HAGP)**
+**Bitcoin Honeypot Address Protocol (BHAP)**
 
 This project implements a distributed protocol to create a Bitcoin honeypot address that is quantum-vulnerable by design. The honeypot serves as a public alert: if its funds are ever spent, it signals that a quantum computer has likely broken the ECDLP on `secp192r1` (and is approaching the security of Bitcoin's `secp256k1`). The protocol is implemented in Python and leverages several cryptographic libraries.
 
 ---
 
-## Protocol Overview: HAGP
+## Protocol Overview: BHAP
 
-The Honeypot Address Generation Protocol (HAGP) is a multi-phase, distributed protocol involving `n` participants and a coordinator. It ensures:
+The Bitcoin Honeypot Address Protocol (BHAP) is a multi-phase, distributed protocol involving `n` participants and a coordinator. It ensures:
 
 1. **Compatibility**: The honeypot address is a standard Taproot address, fully compatible with Bitcoin, but with security reduced to that of `secp192r1`.
 2. **Correctness**: Even with up to `k < n` malicious participants, a quantum computer able to break `secp192r1` can retrieve the funds.
