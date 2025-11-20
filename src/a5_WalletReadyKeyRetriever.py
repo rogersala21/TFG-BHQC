@@ -140,7 +140,7 @@ def create_wallet_descriptor(honeypot_wif):
     descriptor_with_checksum = descsum_create(descriptor)
     print("Creating wallet descriptor ready to import into Bitcoin Core... \n")
     lines = [
-        'createwallet "BHQC"',
+        'createwallet "BHAP"',
         '',
         'importdescriptors \'[{',
         f'  "desc": "{descriptor_with_checksum}",',
