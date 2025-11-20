@@ -66,9 +66,9 @@ def create_op_return_tx(network, taproot_address):
     tx.witnesses.append(TxWitnessInput([sig]))
 
     if network == "testnet":
-        explorer_url = "https://mempool.space/testnet4/tx/preview#hex="
+        explorer_url = "https://mempool.space/testnet4/tx/preview#tx="
     else:
-        explorer_url = "https://mempool.space/tx/preview#hex="
+        explorer_url = "https://mempool.space/tx/preview#tx="
 
     print(f"\nRaw signed transaction ready to preview and broadcast here: {explorer_url}" + tx.serialize())
 
