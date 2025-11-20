@@ -37,7 +37,7 @@ def bitcoinkeygen(seed, unique_suffix, network):
         priv_file.write(priv.to_wif(compressed=True))
 
 def main():
-    print("Welcome to BHQC protocol!\n")
+    print("Welcome to BHAP protocol!\n")
     # Initialize Bitcoin network
     while True:
         net_choice = input("Select network: (m)ainnet or (t)estnet?: ").strip().lower()
